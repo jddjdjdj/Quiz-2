@@ -1,0 +1,110 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package examan;
+
+/**
+ *
+ * @author pc
+ */
+import java.util. Scanner;
+
+public class MinisteriodeEconomia {
+    public static void main(String[] args){ 
+        
+        int Nombre_de_la_Empresa;
+        int Provincia_donde_esta_Ubicada;
+        int Cantidad_de_Trabajadores;
+        int Cantidad_trabajores_que_han_tenido_Covid19;
+        int Monto_de_Ingreso_al_Mes;
+        int La_empresa_tiene_Credito_O_La_Empresa_No_tiene_Credito;
+       
+        Scanner s = new Scanner(System.in); 
+        boolean salir = false;
+        
+        
+            System.out.println("Menu");
+            
+            System.out.println("Ingrese el Nombre de la Empresa: ");
+            Nombre_de_la_Empresa = s.nextInt();
+           
+            System.out.println("Ingrese 1 si la empresa esta ubicada en San Jose : ");
+            System.out.println("Ingrese 2 si la empresa esta ubicada en Alajuela : ");
+            System.out.println("Ingrese 3 si la empresa esta ubicada en Cartago : ");
+            System.out.println("Ingrese 4 si la empresa esta ubicada en Heredia : ");
+            System.out.println("Ingrese 5 si la empresa esta ubicada en Guanacaste : ");
+            System.out.println("Ingrese 6 si la empresa esta ubicada en Puntarenas : ");
+            System.out.println("Ingrese 7 si la empresa esta ubicada en Limón : ");
+            Provincia_donde_esta_Ubicada = s.nextInt();
+            
+            System.out.println("Ingrese La Cantidad de Trabajadores: ");
+            Cantidad_de_Trabajadores = s.nextInt();
+            
+            System.out.println(" Ingrese La Cantidad de trabajores q han tenido Covid-19");
+            Cantidad_trabajores_que_han_tenido_Covid19 = s.nextInt();
+            
+            System.out.println(" Ingrse El Monto de Ingresos al Mes");
+            Monto_de_Ingreso_al_Mes = s.nextInt();
+            
+            
+            
+            System.out.println(" Ingrese 1 si la empresa tiene Credito: Ingrese 2 si la empresa no tiene actualmente credito");
+            La_empresa_tiene_Credito_O_La_Empresa_No_tiene_Credito = s.nextInt();
+            
+           
+            System.out.print("ALERTA HAY MAS DE  20 TRABAJADORES CON COVID-19 EN LA EMPRESA");
+            
+    
+    
+    
+   
+        
+        
+          
+            
+            System.out.println(" Provincia San jose tiene  1 404 242 personas");
+            System.out.println(" Provincia de Alajuela tiene 848 146 personas");
+            System.out.println(" Provincia de Cartago tiene: 490 903 personas");
+            System.out.println(" Provincia de Heredia tiene: 433 677 personas");
+            System.out.println(" Provincia de Guanacaste tiene: 326 953 personas");
+            System.out.println(" Provincia de Puntarenas tiene: 410 929 personas");
+            System.out.println(" Provincia de Limon tiene: 386 862 personas");
+              
+    
+            System.out.println(" Menu ");
+            System.out.println(" El monto que puede prestar es de: 950.000 ");
+            System.out.println(" Cantidad de trabajadores que han tenido Covid-19 / candidad de trabajadores * poblacion de la provincia es:  &&" );
+            
+            int n1,n2,resultado,opcion = 0;
+            
+            if (opcion ==5){
+                System.out.println("Finalizo......");
+            }        
+            
+            else{
+                 switch (opcion){
+                    case 1:
+                         System.out.print("Ingrese el 1er.Monto: ");
+                         n1 = s.nextInt();
+                         System.out.print("Ingrese el 2do.Monto: ");
+                         n2 = s.nextInt();
+                         resultado = promedio.sumar( n1, n2);
+                         System.out.print("La suma es: "+ resultado);
+                         break;
+                         
+                    case 2:
+                         System.out.print("Ingrese el 1er.valor: ");
+                         n1 = s.nextInt();
+                         System.out.print("Ingrese el 2do.valor: ");
+                         n2 = s.nextInt();
+                         resultado = promedio.dividir(n1,n2);
+                         System.out.print("La Divicion es: "+ resultado);
+                         break; 
+                    
+}
+                    
+                   }
+            }
+    }
